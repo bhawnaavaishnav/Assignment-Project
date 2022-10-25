@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee House</title>
+</head>
+
+<body>
+    <script>
+        class Coffee {
+            constructor(name, Milk, Cream, Latte) {
+                this.Coffeename = name;
+                this.Milk = Milk;
+                this.Cream = Cream;
+                this.Latte = Latte;
+            }
+            data() {
+                console.log(`Hi, this is your coffee ${this.Coffeename}.
+                The quantity of Milk in this coffee is ${this.Milk},
+                Cream is ${this.Cream} and the quantity of Latte is ${this.Latte}.`)
+            }
+        }
+
+        let obj1 = new Coffee("Espresso",60,75,100)
+        // obj1.data()
+        console.log(obj1);
+
+        let obj2 = new Coffee("Cappuccino",80,90,125)
+        // obj2.data()
+        console.log(obj2);
+
+        let obj3 = new Coffee("Latte",100,125,150)
+        // obj3.data()
+        console.log(obj3);
+    </script>
+</body>
+
+</html>
